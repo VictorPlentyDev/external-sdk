@@ -1,0 +1,11 @@
+{
+  "name"            : "ExternalSDK",
+  "description"     : "Plugin with external SDK",
+  "namespace"       : "ExternalSDK",
+  "author"          : "Victor Albulescu",
+  "type"            : "template",
+  "serviceProvider" : "ExternalSDK\\Providers\\ExternalSDKServiceProvider",
+  "dependencies" : {
+    "guzzlehttp/guzzle": "6.2.*"
+  }
+}
