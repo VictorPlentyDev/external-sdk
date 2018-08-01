@@ -1,10 +1,10 @@
 {
-  "name"            : "ExternalSDK",
+  "name"            : "HelloExternal",
   "description"     : "Plugin with external SDK",
-  "namespace"       : "ExternalSDK",
+  "namespace"       : "HelloExternal",
   "author"          : "Victor Albulescu",
   "type"            : "template",
-  "serviceProvider" : "ExternalSDK\\Providers\\ExternalSDKServiceProvider",
+  "serviceProvider" : "HelloExternal\\Providers\\HelloExternalServiceProvider",
   "dependencies" : {
     "guzzlehttp/guzzle": "6.2.*"
   }

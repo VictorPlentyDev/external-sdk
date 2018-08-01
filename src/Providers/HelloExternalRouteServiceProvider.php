@@ -6,17 +6,17 @@
  * Time: 14:57
  */
 
-namespace ExternalSDK\Providers;
+namespace HelloExternal\Providers;
 
 
 use Plenty\Plugin\RouteServiceProvider;
 use Plenty\Plugin\Routing\Router;
 
 
-class ExternalSDKRouteServiceProvider extends RouteServiceProvider
+class HelloExternalRouteServiceProvider extends RouteServiceProvider
 {
     public function map(Router $router)
     {
-        $router->get('external','ExternalSDK\Controllers\ContentController@sayHello');
+        $router->get('external','HelloExternal\Controllers\ContentController@sayHello');
     }
 }

@@ -6,7 +6,7 @@
  * Time: 11:56
  */
 
-namespace ExternalSDK\Controllers;
+namespace HelloExternal\Controllers;
 
 use Plenty\Plugin\Controller;
 use Plenty\Plugin\Templates\Twig;
@@ -31,9 +31,9 @@ class ContentController
 
         $packagistResult =
             $libCall->call(
-                'ExternalSDK::guzzle_connector',
+                'HelloExternal::guzzle_connector',
                 ['packagist_query' => $request->get('search')]
             );
-        return $twig->render('ExternalSDK::content.hello', $packagistResult);
+        return $twig->render('HelloExternal::content.hello', $packagistResult);
     }
 }

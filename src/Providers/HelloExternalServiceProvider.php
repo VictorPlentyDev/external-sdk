@@ -6,18 +6,18 @@
  * Time: 14:55
  */
 
-namespace ExternalSDK\Providers;
+namespace HelloExternal\Providers;
 
 
 use Plenty\Plugin\ServiceProvider;
 
-class ExternalSDKServiceProvider extends ServiceProvider
+class HelloExternalServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
      */
     public function register()
     {
-        $this->getApplication()->register(ExternalSDKRouteServiceProvider::class);
+        $this->getApplication()->register(HelloExternalRouteServiceProvider::class);
     }
 }
